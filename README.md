@@ -13,7 +13,7 @@ options given by this.
 
 apt update
 apt upgrade -y
-pkg install python -y
+pkg install git python -y
 git clone https://github.com/D4Droid/viren.git
 
 
