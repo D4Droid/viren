@@ -63,7 +63,7 @@ def Check_requirments ():
     y = "pg_ctl status -D $PREFIX/var/lib/postgresql"
     i = 'pg_ctl: no server running'
     if i == subprocess.getoutput (y):
-        x = "pg_ctl -sD $PREFIX/var/lib/postgresql -l logfile start"
+        x = "pg_ctl -sD $PREFIX/var/lib/postgresql start"
         subprocess.call (x, shell=True)
         time.sleep (2)
         banner ()
